@@ -20,7 +20,7 @@ $(function(){
     $(".delivery").text(delivery);
 // Hide order form show receipt
     $("#orderForm").hide();
-    $("#output").show();
+    $("#output").fadeIn();
 
     event.preventDefault();
   });

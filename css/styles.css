@@ -4,15 +4,29 @@ body {
 }
 
 h1 {
-  font-family: Georgia;
+  font-family: Georgia, serif;
   font-size: 60px;
   text-align: center;
+}
+
+h2, h4, label {
+  font-family: Georgia, serif;
+}
+
+.form-control {
+  width: 50%;
+}
+
+p {
+  font-size: 20px;
 }
 
 .container {
   opacity: .9;
   background-color: lightgreen;
+  width: 600px;
   margin-top: 100px;
+  padding-bottom: 20px;
 }
 
 #output {

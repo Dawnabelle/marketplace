@@ -16,15 +16,15 @@
         <h2>Please enter your contact information</h2>
         <div class="form-group">
           <label for="fullName">Enter full name:</label>
-          <input id="fullName" class="form-control" type="text">
+          <input id="fullName" class="form-control" type="text" required>
         </div>
         <div class="form-group">
           <label for="streetAddress">Enter street address:</label>
-          <input id="streetAddress" class="form-control" type="text">
+          <input id="streetAddress" class="form-control" type="text" required>
         </div>
         <div class="form-group">
           <label for="cityStateZip">Enter city, state, zip code:</label>
-          <input id="cityStateZip" class="form-control" type="text">
+          <input id="cityStateZip" class="form-control" type="text" required>
         </div>
         <!-- <button type="submit" class="btn">Submit</button> -->
       <!-- </form> -->
@@ -34,14 +34,15 @@
         <!-- Select container -->
         <div class="form-group">
           <select class="form-control" id="bagType">
+            <option value="none">none (Thanks for being green!)</option>
             <option value="basket">basket</option>
             <option value="box">box</option>
             <option value="tote">tote</option>
-            <option value="none">none</option>
           </select>
         </div>
         <!-- Select greens -->
         <div class="form-group">
+          <h4>Pick your greens:</h4>
           <div class="radio">
             <label>
               <input type="radio" name="greens" value="kale" checked>
@@ -63,6 +64,7 @@
         </div>
         <!-- Select fruit -->
         <div class="form-group">
+          <h4>Pick your fruit:</h4>
           <div class="radio">
             <label>
               <input type="radio" name="fruit" value="apple" checked>
@@ -84,6 +86,7 @@
         </div>
         <!-- Select herb -->
         <div class="form-group">
+          <h4>Pick your fresh herb:</h4>
           <div class="radio">
             <label>
               <input type="radio" name="herb" value="cilantro" checked>
@@ -112,9 +115,8 @@
       </form>
 <!-- Receipt -->
       <div id="output">
-        <p>Thank you <span class="fullName"></span> for being a loyal customer to DW's Farmstand. Here is a receipt confirming your order that we will deliver on <span class="delivery"><span>.</p>
-        <p>Street Address: <span class="streetAddress"></span></p>
-        <p>City, State Zip: <span class="cityStateZip"></span></p>
+        <p>Thank you, <span class="fullName"></span>, for being a loyal customer to DW's Farmstand! Here is a receipt confirming your order that we will deliver on <span class="delivery"><span>.</p>
+        <p>Delivery Address: <span class="streetAddress"></span>, <span class="cityStateZip"></span></p>
         <p>Bag Type: <span class="bagType"></span></p>
         <p>Greens: <span class="greens"></span></p>
         <p>Fruit: <span class="fruit"></span></p>
