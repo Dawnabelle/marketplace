@@ -12,8 +12,9 @@
     <div class="container">
       <h1>DW's Farmstand</h1>
 <!-- Form to gather user data -->
+      <p id="deliveryInfo">Basic box with delivery fee is $15<br>Total calculated after order is submitted</p>
       <form id="orderForm">
-        <h2>Please enter your contact information</h2>
+        <h2>Contact Info</h2>
         <div class="form-group">
           <label for="fullName">Enter full name:</label>
           <input id="fullName" class="form-control" type="text" required>
@@ -26,19 +27,26 @@
           <label for="cityStateZip">Enter city, state, zip code:</label>
           <input id="cityStateZip" class="form-control" type="text" required>
         </div>
-        <!-- <button type="submit" class="btn">Submit</button> -->
-      <!-- </form> -->
 <!-- Form to gather user order -->
-      <h2>Please complete order form</h2>
-      <!-- <form id="orderForm"> -->
+      <h2>Build Your Box</h2>
         <!-- Select container -->
+        <h4>Select Container:</h4>
         <div class="form-group">
           <select class="form-control" id="bagType">
-            <option value="none">none (Thanks for being green!)</option>
-            <option value="basket">basket</option>
-            <option value="box">box</option>
-            <option value="tote">tote</option>
+            <option value="none">None (save green, be green)</option>
+            <option value="box">Box +$2</option>
+            <option value="tote">Tote +$3</option>
+            <option value="basket">Basket +$5</option>
           </select>
+        </div>
+        <!-- Select container -->
+        <h4>Family Size:</h4>
+        <div class="form-group">
+          <select class="form-control" id="familySize">
+            <option value="single">Single</option>
+            <option value="couple">Couple +$5</option>
+            <option value="family">Family +$10</option>
+            </select>
         </div>
         <!-- Select greens -->
         <div class="form-group">
@@ -115,12 +123,14 @@
       </form>
 <!-- Receipt -->
       <div id="output">
-        <p>Thank you, <span class="fullName"></span>, for being a loyal customer to DW's Farmstand! Here is a receipt confirming your order that we will deliver on <span class="delivery"><span>.</p>
-        <p>Delivery Address: <span class="streetAddress"></span>, <span class="cityStateZip"></span></p>
-        <p>Bag Type: <span class="bagType"></span></p>
-        <p>Greens: <span class="greens"></span></p>
-        <p>Fruit: <span class="fruit"></span></p>
-        <p>Herb: <span class="herb"></span></p>
+        <p><strong>Thank you, <span class="fullName"></span>, for being a loyal customer to DW's Farmstand!</strong><br><br>Here is a receipt confirming your order that we will deliver to <span class="streetAddress"></span>, <span class="cityStateZip"></span> on <span class="delivery"></span>.</p>
+        <h2>Your Order Details:</h2>
+        <p><strong>Bag Type:</strong> <span class="bagType"></span></p>
+        <p><strong>Family Size:</strong> <span class="familySize"></span></p>
+        <p><strong>Greens:</strong> <span class="greens"></span></p>
+        <p><strong>Fruit:</strong> <span class="fruit"></span></p>
+        <p><strong>Herb:</strong> <span class="herb"></span></p><br>
+        <p><strong>Your Total:</strong> $<span class="cost"></span></p>
       </div>
     </div>
   </body>

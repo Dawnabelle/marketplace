@@ -9,12 +9,17 @@ h1 {
   text-align: center;
 }
 
-h2, h4, label {
+h2 {
+  font-family: helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+h4, label {
   font-family: Georgia, serif;
 }
 
 .form-control {
-  width: 50%;
+  width: 60%;
 }
 
 p {
@@ -24,9 +29,19 @@ p {
 .container {
   opacity: .9;
   background-color: lightgreen;
-  width: 600px;
-  margin-top: 100px;
+  width: 900px;
+  margin-top: 50px;
   padding-bottom: 20px;
+}
+
+#deliveryInfo {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+#orderForm {
+  padding-left: 230px;
 }
 
 #output {
