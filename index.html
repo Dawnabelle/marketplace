@@ -12,6 +12,7 @@
     <div class="container">
       <h1>DW's Farmstand</h1>
 <!-- Form to gather user data -->
+      <h2>Please enter your contact information</h2>
       <form id="contactForm">
         <div class="form-group">
           <label for="fullName">Enter full name:</label>
@@ -28,7 +29,85 @@
       </form>
       <button type="submit" class="btn">Submit</button>
 <!-- Form to gather user order -->
+      <h2>Please complete order form</h2>
       <form id="orderForm">
+        <!-- Select container -->
+        <div class="form-group">
+          <select class="form-control" name="basket">
+            <option value="">basket</option>
+            <option value="">box</option>
+            <option value="">tote</option>
+            <option value="">your own case</option>
+          </select>
+        </div>
+        <!-- Select greens -->
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="greens" value="kale" checked>
+              Kale
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="greens" value="spinach">
+              Spinach
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="greens" value="arugala">
+              Arugala
+            </label>
+          </div>
+        </div>
+        <!-- Select fruit -->
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="fruit" value="apple" checked>
+              Apple
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fruit" value="banana">
+              Banana
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="fruit" value="pear">
+              Pear
+            </label>
+          </div>
+        </div>
+        <!-- Select herb -->
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="herb" value="cilantro" checked>
+              Cilantro
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="herb" value="thyme">
+              Thyme
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="herb" value="oregano">
+              Oregano
+            </label>
+          </div>
+        </div>
+        <!-- Pickup date -->
+        <div class="form-group">
+          <label for="pickUp">Enter desired pickup date:</label>
+          <input id="pickUp" class="form-control" type="date">
+        </div>
       </form>
       <button type="submit" class="btn">Submit</button>
 
