@@ -6,9 +6,37 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>DW's Farmstand</title>
   </head>
   <body>
+    <div class="container">
+      <h1>DW's Farmstand</h1>
+<!-- Form to gather user data -->
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="fullName">Enter full name:</label>
+          <input id="fullName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="streetAddress">Enter street address:</label>
+          <input id="streetAddress" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="cityStateZip">Enter city, state, zip code:</label>
+          <input id="cityStateZip" class="form-control" type="text">
+        </div>
+      </form>
+      <button type="submit" class="btn">Submit</button>
+<!-- Form to gather user order -->
+      <form id="orderForm">
+      </form>
+      <button type="submit" class="btn">Submit</button>
 
+<!-- Receipt -->
+      <div class="output">
+        <span class="contactInfo"></span>
+        <span class="orderInfo"></span>
+      </div>
+    </div>
   </body>
 </html>
