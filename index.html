@@ -13,7 +13,7 @@
       <h1>DW's Farmstand</h1>
 <!-- Form to gather user data -->
       <h2>Please enter your contact information</h2>
-      <form id="contactForm">
+      <form id="orderForm">
         <div class="form-group">
           <label for="fullName">Enter full name:</label>
           <input id="fullName" class="form-control" type="text">
@@ -26,18 +26,18 @@
           <label for="cityStateZip">Enter city, state, zip code:</label>
           <input id="cityStateZip" class="form-control" type="text">
         </div>
-      </form>
-      <button type="submit" class="btn">Submit</button>
+        <!-- <button type="submit" class="btn">Submit</button> -->
+      <!-- </form> -->
 <!-- Form to gather user order -->
       <h2>Please complete order form</h2>
-      <form id="orderForm">
+      <!-- <form id="orderForm"> -->
         <!-- Select container -->
         <div class="form-group">
-          <select class="form-control" name="basket">
-            <option value="">basket</option>
-            <option value="">box</option>
-            <option value="">tote</option>
-            <option value="">your own case</option>
+          <select class="form-control" id="bagType">
+            <option value="basket">basket</option>
+            <option value="box">box</option>
+            <option value="tote">tote</option>
+            <option value="none">none</option>
           </select>
         </div>
         <!-- Select greens -->
@@ -108,13 +108,15 @@
           <label for="pickUp">Enter desired pickup date:</label>
           <input id="pickUp" class="form-control" type="date">
         </div>
+        <button type="submit" class="btn">Submit</button>
       </form>
-      <button type="submit" class="btn">Submit</button>
-
 <!-- Receipt -->
-      <div class="output">
-        <span class="contactInfo"></span>
-        <span class="orderInfo"></span>
+      <div id="output">
+        <p>Thank you for being a loyal customer to DW's Farmstand. Here is a receipt confirming your order and pickup date.</p>
+        <p>Name: <span class="fullName"></span></p>
+        <p>Street Address: <span class="streetAddress"></span></p>
+        <p>City, State Zip: <span class="cityStateZip"></span></p>
+        <p>Bag Type: <span class="bagType"></span></p>
       </div>
     </div>
   </body>

@@ -1,3 +1,5 @@
-.output {
+#output {
   display: none;
+  border: 1px dashed #f1f1f1;
+  background-color: lightgreen;
 }
