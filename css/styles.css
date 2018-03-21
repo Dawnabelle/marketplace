@@ -1,6 +1,8 @@
 body {
-  background-image: url("../img/wallpaper.jpg");
+  background: url("../img/wallpaper.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: green;
 }
 
 h1 {
